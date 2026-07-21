@@ -9,7 +9,7 @@
 
 
 body{
-  max-width: 100vh;
+  
 }
 
 nav{
@@ -38,7 +38,7 @@ a:hover {
 
 .nav__container {
   display:flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1200px;
@@ -98,7 +98,6 @@ Header
 .header__container{
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
@@ -107,6 +106,8 @@ Header
 
 .header__description {
   font-size: 24px;
+  flex-wrap: wrap;
+  width: 60%;
 }
 
 .purple {
@@ -152,5 +153,7 @@ Header
 }
 
 .img__two {
-  
+  display: flex;
+  width: 40%;
+  height: auto;
 }
