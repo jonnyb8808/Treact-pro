@@ -15,13 +15,12 @@ body{
 nav{
   height: 80px;
   display: flex;
+  margin-top: 24px;
 }
 
 img {
   height: 100%;
   width: 100%;
-  max-height: 50vh;
-  padding: 20px;
 }
 
 a {
@@ -30,6 +29,11 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.logo__wrapper {
+  display: flex;
+  align-items: center;
 }
 
 .nav__container {
@@ -42,10 +46,11 @@ a:hover {
   margin: 0 auto;
 }
 
+
 .logo {
   display: flex;
   align-items: center;
-  width: 160px;
+  width: 100px;
   margin-right: 12px;
 }
 
@@ -82,5 +87,70 @@ li {
   background-color: rgba(130, 85, 202);
   text-decoration: none;
   transition: background-color 300ms ease;
+}
+
+/*
+
+Header
+
+*/
+
+.header__container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 50px 200px;
+}
+
+.header__description {
+  font-size: 24px;
+}
+
+.purple {
+  color: rgba(88, 19, 199)
+}
+
+.header__para {
+  padding: 20px;
+}
+
+.email__wrapper{
+  padding: 20px;
+}
+
+.header__email {
+  font-size: 20px;
+  padding:12px;
+  border: 4px solid gray;
+  border-radius: 30%;
+}
+
+.header__btn {
+  background-color: rgba(88, 19, 199);
+  font-size: 20px;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 25%; 
+}
+
+.header__btn:hover {
+  background-color: rgba(130, 85, 202);
+  text-decoration: none;
+  transition: background-color 300ms ease;
+}
+
+.img__one {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  height: auto; 
+  padding: 24px;
+}
+
+.img__two {
   
 }
