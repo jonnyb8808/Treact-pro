@@ -361,12 +361,20 @@ VALUES
   flex-direction: column;
 }
 
+.value__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .value__type {
-  padding:12px;
+  padding: 12px;
 }
 
 .value__description{
+  font-size: 20px;
   margin-top: 16px;
+  padding-right: 16px;
 }
 
 .value__img {
@@ -393,3 +401,9 @@ VALUES
   text-decoration: none;
   transition: background-color 300ms ease;
 }
+
+/*
+
+PRICING
+
+*/
