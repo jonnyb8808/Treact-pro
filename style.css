@@ -120,7 +120,7 @@ Header
   font-size: 20px;
   padding: 12px;
   border: 4px solid gray;
-  border-radius: 30%;
+  border-radius: 500px;
 }
 
 .header__btn {
@@ -468,6 +468,8 @@ PRICING
 
 .personal__stripe {
   position: relative;
+  width: 100%;
+  padding: 10px;
 }
 
 .personal__stripe::before {
@@ -479,6 +481,22 @@ PRICING
   height: 8px;
   background: linear-gradient(to right, #2a9d8f, #90e0c4);
 
+}
+
+.enterprise__stripe {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+}
+
+.enterprise__stripe::before {
+  content: "";
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to right, #e05a4d, #f0a89f);
 }
 
 .plan__top {
