@@ -73,7 +73,7 @@ li {
 .nav__link--primary {
   background-color: rgba(88, 19, 199);
   color: white;
-  border-radius: 25%;
+  border-radius: 500px;
 }
 
 .nav__link--primary:hover {
@@ -95,6 +95,7 @@ Header
   width: 100%;
   max-width: 1200px;
   padding: 50px 200px;
+  padding-bottom: 200px;
 }
 
 .header__description {
@@ -127,7 +128,7 @@ Header
   font-size: 20px;
   color: white;
   padding: 10px 10px;
-  border-radius: 25%;
+  border-radius: 500px;
 }
 
 .header__btn:hover {
@@ -190,7 +191,7 @@ FEATURES
   border-radius: 4px;
   margin-bottom: 24px;
   padding-right: 12px;
-  padding-top: 20px;
+  padding-top: 64px;
 }
 
 .services {
@@ -231,7 +232,7 @@ QUALITY
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 64px;
+  padding-top: 200px;
 }
 .quality__title {
   padding-top: 16px;
@@ -256,7 +257,7 @@ QUALITY
 .quality__img {
   width: 100%;
   height: auto;
-  padding-top: 64px;
+  padding-top: 200px;
 }
 
 .quality__btn {
@@ -267,7 +268,7 @@ QUALITY
   width: 100%;
   max-width: 100px;
   cursor: pointer;
-  border-radius: 25%;
+  border-radius: 500px;
   margin-top: 12px;
 }
 
@@ -287,11 +288,11 @@ STEPS
   display: flex;
   align-items: right;
   flex-direction: column;
-  padding-top: 64px;
+  padding-top: 200px;
 }
 
 .steps__img {
-  padding-top: 64px;
+  padding-top: 200px;
   padding-right: 24px;
 }
 
@@ -300,8 +301,6 @@ STEPS
 }
 
 .steps__title {
-  list-style-type: decimal-leading-zero;
-  text-decoration: none;
   padding-top: 24px;
   font-size: 24px;
   font-weight: 700;
@@ -310,4 +309,83 @@ STEPS
 .steps__description {
   font-size: 16px;
   font-weight: 500;
+}
+
+ol {
+  list-style: none;
+  counter-reset: item;
+}
+
+ol li {
+  counter-increment: item;
+}
+
+ol li::before {
+  content: counter(item, decimal-leading-zero);
+  color: #cbd5e1;
+  font-weight: 700;
+  margin-right: 12px;
+}
+
+/*
+
+VALUES
+
+*/
+
+.values {
+  padding-top: 200px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.values__subtitle{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.values__para {
+  padding-bottom: 24px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.value__container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  
+}
+
+.value__type {
+  padding:12px;
+}
+
+.value__description{
+  margin-top: 16px;
+}
+
+.value__img {
+  padding-top: 200px;
+  width: 100%;
+  padding-left: 24px;
+}
+
+.value__btn {
+  background-color: rgba(88, 19, 199);
+  color: white;
+  padding: 12px 4px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 100px;
+  cursor: pointer;
+  border-radius: 500px;
+  margin-top: 12px;
+  border: none;
+}
+
+.value__btn:hover {
+    background-color: rgba(130, 85, 202);
+  text-decoration: none;
+  transition: background-color 300ms ease;
 }
