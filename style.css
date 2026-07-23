@@ -354,7 +354,11 @@ VALUES
   display: flex;
   flex-direction: row;
   text-align: center;
-  
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
 }
 
 .value__type {
