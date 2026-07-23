@@ -354,6 +354,8 @@ VALUES
   display: flex;
   flex-direction: row;
   text-align: center;
+  gap: 32px;
+  text-align: left;
 }
 
 .value {
@@ -414,7 +416,185 @@ PRICING
   margin: 0 auto;
 }
 
-.price__title {
-  display:flex;
+.row__pricing {
+  display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.price__title {
+  font-size: 32px;
+  padding-bottom: 12px;
+}
+
+.price__subtitle {
+  max-width: 500px;
+  text-align: center;
+  font-size: 52px;
+  padding-bottom: 12px;
+}
+
+.price__para {
+  max-width: 500px;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 32px;
+}
+
+.plans {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+  margin: auto 0;
+}
+
+.plan {
+  margin-top: 4px;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.6);
+}
+
+.plan__business{
+  background-color: rgba(88, 19, 199);
+  color: white;
+}
+
+
+.plan__top {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+
+.plan__name {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.plan__name--business{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.plan__price {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.plan__price--business{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.plan__duration {
+  color: gray;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.plan__duration-business {
+  color: white;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+
+.plan__middle {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+}
+
+.plan__target {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-bottom: 4px;
+}
+
+.plan__target--business {
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-bottom: 4px;
+}
+
+.plan__feature {
+  margin-top: 20px;
+  font-weight: 600;
+  color: gray;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.plan__feature--business {
+  margin-top: 20px;
+  font-weight: 600;
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.plan__btn {
+    background-color: rgb(155, 218, 204);
+  color: white;
+  padding: 12px 4px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 100px;
+  cursor: pointer;
+  border-radius: 500px;
+  margin-top: 12px;
+  border: none;
+  transition: all 300ms ease;
+}
+
+.plan__btn:hover {
+  background-color:  rgb(9, 187, 148);
+  transition: all 300ms ease;
+}
+
+.plan__btn--business {
+    background-color: white;
+  color: rgba(88, 19, 199);
+  padding: 12px 4px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 100px;
+  cursor: pointer;
+  border-radius: 500px;
+  margin-top: 12px;
+  border: none;
+  transition: all 300ms ease;
+}
+
+.plan__btn--business:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.plan__btn--enterprise{
+    background-color: rgb(228, 107, 59);
+  color: white;
+  padding: 12px 4px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 100px;
+  cursor: pointer;
+  border-radius: 500px;
+  margin-top: 12px;
+  border: none;
+  transition: all 300ms ease;
 }
