@@ -407,3 +407,14 @@ VALUES
 PRICING
 
 */
+
+.pricing__container{
+  padding: 200px 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.price__title {
+  display:flex;
+  flex-direction: column;
+}
